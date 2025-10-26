@@ -87,6 +87,11 @@ header {
   margin-bottom: 20px;
 }
 
+@font-face{
+	font-family: 'MoonTime';
+	src: url('moon-time-regular.ttf');
+}
+
 .home-content .brand-title span {
  font-size: clamp(1rem, 2vw, 2rem);
   color: #C9A66B;
