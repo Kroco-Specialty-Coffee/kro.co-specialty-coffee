@@ -59,6 +59,7 @@ header .navbar {
   box-sizing: border-box;
 }
 
+@font-face
 .logo-text {
   font-family: 'MoonTime';
   font-size: 3rem;
