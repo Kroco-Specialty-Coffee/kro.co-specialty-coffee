@@ -51,15 +51,19 @@ header .navbar {
     box-sizing: border-box;
 }
 
-@font-face
-.logo-text {
+@font-face {
   font-family: 'MoonTime';
   src: url('moon-time-regular.ttf');
+}
+
+.logo-text {
+  font-family: 'MoonTime', cursive;
   font-size: 3rem;
   color: #C9A66B;
   font-weight: 650;
   letter-spacing: 1px;
 }
+
 
 .logo-text span {
   font-family: 'Poppins', sans-serif;
