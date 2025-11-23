@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,14 +15,12 @@ html {
 
 body {
   margin: 0;
-  margin-top: -100px;
   padding: 0;
   background: #2b2b2b;
   color: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow: hidden; 
 }
 
 header {
@@ -61,7 +59,8 @@ header {
   text-align: center;
   padding: 40px 20px;
   gap: 1.5rem;
-  margin-top: 100px;
+  margin-top: 120px;
+  
 }
 
 .home-img img {
@@ -80,7 +79,7 @@ header {
 }
 
 .home-content .brand-title {
-  font-size: clamp(4rem, 5vw, 7rem);
+  font-size: clamp(5rem, 3vw, 6rem);
   color: #C9A66B;
   font-family: MoonTime;
   font-weight: 650;
@@ -171,7 +170,6 @@ footer {
   width: 100%;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
   border-top: 1px solid #222;
-  position: fixed;
   bottom: 0;
   left: 0;
 }
@@ -214,4 +212,83 @@ footer p img {
   height: 25px;
   border-radius: 50%;
   margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-y: auto;
+    margin-top: 0;
+  }
+
+  .home {
+    padding: 20px 10px;
+    margin-top: 40px;
+  }
+
+  .home-img img {
+    width: 180px;
+    max-width: 60%;
+  }
+
+  .home-content .brand-title {
+    font-size: 3.5rem;
+  }
+
+  .home-content .brand-title span {
+    font-size: 1.4rem;
+  }
+
+  .home-content .description {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
+
+  .home-content .hours h3 {
+    font-size: 1.8rem;
+  }
+
+  .home-content .hours p {
+    font-size: 1.4rem;
+  }
+
+  .social-icons a {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .button {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+    padding: 15px 5px;
+  }
+
+  footer p {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .home-content .brand-title {
+    font-size: 2.8rem;
+  }
+
+  .home-img img {
+    width: 150px;
+  }
+
+  .button {
+    width: 90%;
+  }
 }

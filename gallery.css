@@ -241,3 +241,79 @@ footer p img {
   border-radius: 50%;
   margin-right: 8px;
 }
+
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 30px;
+  }
+
+  .section-content {
+    padding: 0 20px;
+  }
+
+  .navbar .nav-menu {
+    gap: 10px;
+  }
+
+  .navbar .nav-menu .nav-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .logo-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .navbar .nav-menu .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-text {
+    font-size: 1.8rem;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; 
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .navbar .nav-menu .nav-link {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+}

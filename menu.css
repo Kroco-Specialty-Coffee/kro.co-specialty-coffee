@@ -125,8 +125,8 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 160px;
+    justify-content: space-between;
 }
-
 
 .menu-filter {
   position: fixed;
@@ -277,8 +277,7 @@ footer {
   width: 100%;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
   border-top: 1px solid #222;
-  bottom: 0;
-  left: 0;
+  flex-shrink: 0;
 }
 
 footer p {
@@ -319,4 +318,86 @@ footer p img {
   height: 25px;
   border-radius: 50%;
   margin-right: 8px;
+}
+
+@media (max-width: 1200px) {
+  .products {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+
+  .navbar .nav-menu {
+    gap: 12px;
+  }
+
+  .navbar .nav-menu .nav-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .logo-text {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .products {
+    gap: 10px;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .nav-menu .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-filter {
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+
+  .menu-filter button {
+    width: 100%;
+  }
+
+  .logo-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .menu-filter {
+    padding: 10px 5px;
+  }
+
+  .menu-filter button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
 }

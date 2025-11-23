@@ -252,3 +252,60 @@ footer p img {
 	margin-right: 8px;
 }
 
+@media (max-width: 768px) {
+  .contact {
+    padding: 30px 20px;
+    transform: translateY(0);
+  }
+
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icons a,
+  .social-icons div {
+    font-size: 14px;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 20px 15px;
+  }
+
+  .contact h2 {
+    font-size: 24px;
+  }
+
+  .contact p {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .social-icons img {
+    width: 18px;
+    height: 18px;
+  }
+}
